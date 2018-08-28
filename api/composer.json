@@ -32,6 +32,13 @@
             "App\\Tests\\": "tests/"
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        { "packagist": false }
+    ],
     "replace": {
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",

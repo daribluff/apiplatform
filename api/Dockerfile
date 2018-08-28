@@ -7,6 +7,13 @@ ARG VARNISH_VERSION=6.0
 
 FROM php:${PHP_VERSION}-fpm-alpine AS api_platform_php
 
+ENV http_proxy=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
+ENV https_proxy=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
+ENV HTTP_PROXY=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
+ENV HTTPS_PROXY=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
+ENV HTTP_PROXY_REQUEST_FULLURI=false
+ENV NO_PROXY=127.0.0.1
+
 # persistent / runtime deps
 RUN apk add --no-cache \
 		acl \
@@ -17,8 +24,8 @@ RUN apk add --no-cache \
 	;
 
 ARG APCU_VERSION=5.1.12
-RUN set -eux; \
-	apk add --no-cache --virtual .build-deps \
+
+RUN apk add --no-cache --virtual .build-deps \
 		$PHPIZE_DEPS \
 		icu-dev \
 		libzip-dev \
@@ -32,8 +39,13 @@ RUN set -eux; \
 		pdo_pgsql \
 		zip \
 	; \
+	set -eux; \
+	pear config-set http_proxy http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128; \
+	pear  upgrade --force; \
+#	pear channel-update pear.php.net; \
+#	pecl channel-update ppecl.php.net; \
 	pecl install \
-		apcu-${APCU_VERSION} \
+		 apcu-${APCU_VERSION} \
 	; \
 	pecl clear-cache; \
 	docker-php-ext-enable \
@@ -57,6 +69,8 @@ COPY docker/php/php.ini /usr/local/etc/php/php.ini
 # https://getcomposer.org/doc/03-cli.md#composer-allow-superuser
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN set -eux; \
+    export HTTP_PROXY_REQUEST_FULLURI=true; \
+    export HTTPS_PROXY_REQUEST_FULLURI=false; \
 	composer global require "hirak/prestissimo:^0.3" --prefer-dist --no-progress --no-suggest --classmap-authoritative; \
 	composer clear-cache
 ENV PATH="${PATH}:/root/.composer/vendor/bin"
