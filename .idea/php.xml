@@ -89,6 +89,9 @@
       <path value="$PROJECT_DIR$/api/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-intl-icu" />
       <path value="$PROJECT_DIR$/api/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/api/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

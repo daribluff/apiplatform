@@ -9,6 +9,9 @@ register:
 login:
   path:     /login
   controller: App\Controller\SecurityController::login
-  
+
 logout:
   path: /logout
+
+api_login_check:
+  path: /login

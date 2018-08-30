@@ -1,0 +1,5 @@
+lexik_jwt_authentication:
+    secret_key: '123456789'
+    public_key: '123456789'
+    pass_phrase: 'apiplatform'
+    token_ttl:   3600
