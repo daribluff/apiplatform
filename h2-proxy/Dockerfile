@@ -4,7 +4,7 @@ ENV http_proxy=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
 ENV https_proxy=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
 ENV HTTP_PROXY=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
 ENV HTTPS_PROXY=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128
-ENV NO_PROXY=127.0.0.
+ENV NO_PROXY=localhost
 
 RUN apk add --no-cache openssl
 

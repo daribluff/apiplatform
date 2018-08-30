@@ -18,7 +18,12 @@ security:
             pattern:    ^/
             http_basic: ~
             provider: userprovider
-            logout: true
+            form_login:
+                login_path: login
+                check_path: login
+            logout:
+                path:   /logout
+                target: /
 
             # activate different ways to authenticate
 
@@ -27,3 +32,6 @@ security:
 
             # form_login: ~
             # https://symfony.com/doc/current/security/form_login_setup.html
+
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
