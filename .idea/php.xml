@@ -75,6 +75,20 @@
       <path value="$PROJECT_DIR$/api/vendor/doctrine/doctrine-cache-bundle" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/api/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/api/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/api/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/api/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/api/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/api/vendor/sensio/framework-extra-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

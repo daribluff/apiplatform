@@ -26,7 +26,7 @@ ReactDom.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path="/ad" component={Welcome} strict={true} exact={true}/>
+        <Route path="/" component={Welcome} strict={true} exact={true}/>
         <Route path="/books" component={book} strict={true} exact={true}/>
         {/* Add your routes here */}
         <Route render={() => <h1>Not Found</h1>}/>
