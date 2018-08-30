@@ -12,9 +12,11 @@ import 'font-awesome/css/font-awesome.css';
 import registerServiceWorker from './registerServiceWorker';
 // Import your reducers and routes here
 import Welcome from './Welcome';
+import book from './reducers/book/';
+import bookRoutes from './routes/book';
 
 const store = createStore(
-  combineReducers({routing, form, /* Add your reducers here */}),
+  combineReducers({routing, form, book}),
   applyMiddleware(thunk),
 );
 
@@ -24,7 +26,8 @@ ReactDom.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path="/" component={Welcome} strict={true} exact={true}/>
+        <Route path="/ad" component={Welcome} strict={true} exact={true}/>
+        <Route path="/books" component={book} strict={true} exact={true}/>
         {/* Add your routes here */}
         <Route render={() => <h1>Not Found</h1>}/>
       </Switch>
