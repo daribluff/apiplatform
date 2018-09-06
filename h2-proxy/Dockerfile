@@ -3,7 +3,7 @@ FROM alpine:latest
 ENV http_proxy=http://CptLinuxWeb:LinuxWeb@LYO1-TT-SQUID.tessi-techno.fr:3128
 ENV https_proxy=http://CptLinuxWeb:LinuxWeb@LYO1-TT-SQUID.tessi-techno.fr:3128
 ENV HTTP_PROXY=http://CptLinuxWeb:LinuxWeb@LYO1-TT-SQUID.tessi-techno.fr:3128
-ENV HTTPS_PROXY=http://CptLinuxWeb:LinuxWeb@LYO1-TT-SQUID.tessi-techno.fr:3128
+ENV HTTPS_PROXY=http://CptLinuxWeb:LinuxWeb@10.169.119.6:3128
 ENV NO_PROXY=127.0.0.
 
 RUN apk add --no-cache openssl
@@ -24,3 +24,4 @@ RUN export HTTPS_PROXY=http://CptLinuxWeb:LinuxWeb@LYO1-TT-SQUID.tessi-techno.fr
 RUN mkdir -p /etc/nginx/ssl/
 COPY --from=0 cert.key cert.crt /etc/nginx/ssl/
 COPY conf.d /etc/nginx/conf.d/
+

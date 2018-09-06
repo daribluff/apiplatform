@@ -22,18 +22,4 @@ const store = createStore(
 
 const history = syncHistoryWithStore(createBrowserHistory(), store);
 
-ReactDom.render(
-  <Provider store={store}>
-    <Router history={history}>
-      <Switch>
-        <Route path="/" component={Welcome} strict={true} exact={true}/>
-        <Route path="/books" component={book} strict={true} exact={true}/>
-        {/* Add your routes here */}
-        <Route render={() => <h1>Not Found</h1>}/>
-      </Switch>
-    </Router>
-  </Provider>,
-  document.getElementById('root')
-);
-
 registerServiceWorker();

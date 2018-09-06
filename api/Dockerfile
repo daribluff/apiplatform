@@ -40,7 +40,7 @@ RUN apk add --no-cache --virtual .build-deps \
 		zip \
 	; \
 	set -eux; \
-	pear config-set http_proxy http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128; \
+	pear config-set http_proxy http://CptLinuxWeb:LinuxWeb@LYO1-TT-SQUID.tessi-techno.fr:3128; \
 	pear  upgrade --force; \
 	pecl install \
 		 apcu-${APCU_VERSION} \
