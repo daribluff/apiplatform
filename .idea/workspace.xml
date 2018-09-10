@@ -31,7 +31,7 @@
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="ini" value="2" />
-          <entry key="js" value="20" />
+          <entry key="js" value="22" />
           <entry key="json" value="5" />
           <entry key="lock" value="2" />
           <entry key="php" value="54" />
@@ -48,7 +48,7 @@
           <entry key="Dockerfile" value="15" />
           <entry key="Ini" value="2" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="20" />
+          <entry key="JavaScript" value="22" />
           <entry key="PHP" value="54" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="SmartyConfig" value="5" />
@@ -61,7 +61,7 @@
           <entry key="Dockerfile" value="359" />
           <entry key="dummy" value="10" />
           <entry key="env" value="20" />
-          <entry key="js" value="101" />
+          <entry key="js" value="252" />
           <entry key="json" value="12" />
           <entry key="php" value="1023" />
           <entry key="yaml" value="405" />
@@ -71,7 +71,7 @@
         <counts>
           <entry key="Dockerfile" value="359" />
           <entry key="JSON" value="12" />
-          <entry key="JavaScript" value="101" />
+          <entry key="JavaScript" value="252" />
           <entry key="PHP" value="1023" />
           <entry key="PLAIN_TEXT" value="30" />
           <entry key="YAML" value="405" />
@@ -90,14 +90,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="170">
+              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#664#696#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/components/user/List.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,7 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sw</find>
       <find>rout</find>
       <find>welcome to ap</find>
       <find>doctrine</find>
@@ -164,6 +175,7 @@
       <find>CONNECT_CR_SRVR_HELLO</find>
       <find>CORS_ALLOW_ORIGIN</find>
       <find>HTTPS_PROXY=http://CptLinuxWeb:LinuxWeb@bdx2-tt-proxy.tessi-techno.fr:3128</find>
+      <find>book</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -335,6 +347,32 @@
               <item name="apiplatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="apiplatform" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="apiplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apiplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apiplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apiplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apiplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apiplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apiplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apiplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -390,7 +428,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69740000" />
+    <option name="totallyTimeSpent" value="74598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -409,7 +447,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4121475" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -445,20 +483,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/src/Migrations/Version20180830141758.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/vendor/symfony/doctrine-bridge/Validator/Constraints/UniqueEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/Migrations/Version20180830141942.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -751,13 +775,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/user/Create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="170">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#664#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/user/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

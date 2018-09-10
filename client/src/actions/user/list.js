@@ -1,34 +1,35 @@
 import fetch from '../../utils/fetch';
 
 export function error(error) {
-  return {type: 'REVIEW_SHOW_ERROR', error};
+  return {type: 'USER_LIST_ERROR', error};
 }
 
 export function loading(loading) {
-  return {type: 'REVIEW_SHOW_LOADING', loading};
+  return {type: 'USER_LIST_LOADING', loading};
 }
 
-export function retrieved(retrieved) {
-  return {type: 'REVIEW_SHOW_RETRIEVED_SUCCESS', retrieved};
+export function success(data) {
+  return {type: 'USER_LIST_SUCCESS', data};
 }
 
-export function retrieve(id) {
+export function list(page = '/users') {
   return (dispatch) => {
     dispatch(loading(true));
+    dispatch(error(''));
 
-    return fetch(id)
+    fetch(page)
       .then(response => response.json())
       .then(data => {
         dispatch(loading(false));
-        dispatch(retrieved(data));
+        dispatch(success(data));
       })
       .catch(e => {
         dispatch(loading(false));
-        dispatch(error(e.message));
+        dispatch(error(e.message))
       });
   };
 }
 
 export function reset() {
-  return {type: 'REVIEW_SHOW_RESET'};
+  return {type: 'USER_LIST_RESET'};
 }

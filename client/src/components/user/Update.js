@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Form from './Form';
-import { success } from '../../actions/book/create';
-import { retrieve, update, reset } from '../../actions/book/update';
-import { del, loading, error } from '../../actions/book/delete';
+import { success } from '../../actions/user/create';
+import { retrieve, update, reset } from '../../actions/user/update';
+import { del, loading, error } from '../../actions/user/delete';
 
 class Update extends Component {
   static propTypes = {
@@ -60,16 +60,16 @@ class Update extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    retrieveError: state.book.update.retrieveError,
-    retrieveLoading: state.book.update.retrieveLoading,
-    updateError: state.book.update.updateError,
-    updateLoading: state.book.update.updateLoading,
-    deleteError: state.book.del.error,
-    deleteLoading: state.book.del.loading,
-    created: state.book.create.created,
-    deleted: state.book.del.deleted,
-    retrieved: state.book.update.retrieved,
-    updated: state.book.update.updated,
+    retrieveError: state.user.update.retrieveError,
+    retrieveLoading: state.user.update.retrieveLoading,
+    updateError: state.user.update.updateError,
+    updateLoading: state.user.update.updateLoading,
+    deleteError: state.user.del.error,
+    deleteLoading: state.user.del.loading,
+    created: state.user.create.created,
+    deleted: state.user.del.deleted,
+    retrieved: state.user.update.retrieved,
+    updated: state.user.update.updated,
   };
 };
 

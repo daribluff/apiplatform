@@ -2,22 +2,22 @@ import { SubmissionError } from 'redux-form';
 import fetch from '../../utils/fetch';
 
 export function error(error) {
-  return {type: 'BOOK_CREATE_ERROR', error};
+  return {type: 'USER_CREATE_ERROR', error};
 }
 
 export function loading(loading) {
-  return {type: 'BOOK_CREATE_LOADING', loading};
+  return {type: 'USER_CREATE_LOADING', loading};
 }
 
 export function success(created) {
-  return {type: 'BOOK_CREATE_SUCCESS', created};
+  return {type: 'USER_CREATE_SUCCESS', created};
 }
 
 export function create(values) {
   return (dispatch) => {
     dispatch(loading(true));
 
-    return fetch('/books', {method: 'POST', body: JSON.stringify(values)})
+    return fetch('/users', {method: 'POST', body: JSON.stringify(values)})
       .then(response => {
         dispatch(loading(false));
 

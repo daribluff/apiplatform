@@ -3,15 +3,15 @@ import fetch from '../../utils/fetch';
 import { success as createSuccess } from './create';
 
 export function retrieveError(retrieveError) {
-  return {type: 'REVIEW_UPDATE_RETRIEVE_ERROR', retrieveError};
+  return {type: 'USER_UPDATE_RETRIEVE_ERROR', retrieveError};
 }
 
 export function retrieveLoading(retrieveLoading) {
-  return {type: 'REVIEW_UPDATE_RETRIEVE_LOADING', retrieveLoading};
+  return {type: 'USER_UPDATE_RETRIEVE_LOADING', retrieveLoading};
 }
 
 export function retrieveSuccess(retrieved) {
-  return {type: 'REVIEW_UPDATE_RETRIEVE_SUCCESS', retrieved};
+  return {type: 'USER_UPDATE_RETRIEVE_SUCCESS', retrieved};
 }
 
 export function retrieve(id) {
@@ -32,15 +32,15 @@ export function retrieve(id) {
 }
 
 export function updateError(updateError) {
-  return {type: 'REVIEW_UPDATE_UPDATE_ERROR', updateError};
+  return {type: 'USER_UPDATE_UPDATE_ERROR', updateError};
 }
 
 export function updateLoading(updateLoading) {
-  return {type: 'REVIEW_UPDATE_UPDATE_LOADING', updateLoading};
+  return {type: 'USER_UPDATE_UPDATE_LOADING', updateLoading};
 }
 
 export function updateSuccess(updated) {
-  return {type: 'REVIEW_UPDATE_UPDATE_SUCCESS', updated};
+  return {type: 'USER_UPDATE_UPDATE_SUCCESS', updated};
 }
 
 export function update(item, values) {
@@ -74,5 +74,5 @@ export function update(item, values) {
 }
 
 export function reset() {
-  return {type: 'REVIEW_UPDATE_RESET'};
+  return {type: 'USER_UPDATE_RESET'};
 }

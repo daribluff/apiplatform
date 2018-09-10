@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Form from './Form';
-import { create, loading, error } from '../../actions/review/create';
+import { create, loading, error } from '../../actions/user/create';
 
 class Create extends Component {
   static propTypes = {
@@ -22,7 +22,7 @@ class Create extends Component {
     if (this.props.created) return <Redirect to={`edit/${encodeURIComponent(this.props.created['@id'])}`}/>;
 
     return <div>
-      <h1>New Review</h1>
+      <h1>New User</h1>
 
       {this.props.loading && <div className="alert alert-info" role="status">Loading...</div>}
       {this.props.error && <div className="alert alert-danger" role="alert"><span className="fa fa-exclamation-triangle" aria-hidden="true"></span> {this.props.error}</div>}
@@ -35,9 +35,9 @@ class Create extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    created: state.review.create.created,
-    error: state.review.create.error,
-    loading: state.review.create.loading,
+    created: state.user.create.created,
+    error: state.user.create.error,
+    loading: state.user.create.loading,
   };
 };
 

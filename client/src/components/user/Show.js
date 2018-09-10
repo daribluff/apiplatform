@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
-import {retrieve, reset} from '../../actions/book/show';
-import { del, loading, error } from '../../actions/book/delete';
+import {retrieve, reset} from '../../actions/user/show';
+import { del, loading, error } from '../../actions/user/delete';
 
 class Show extends Component {
   static propTypes = {
@@ -51,34 +51,34 @@ class Show extends Component {
           </thead>
           <tbody>
             <tr>
-              <th scope="row">isbn</th>
-              <td>{item['isbn']}</td>
+              <th scope="row">email</th>
+              <td>{item['email']}</td>
             </tr>
             <tr>
-              <th scope="row">title</th>
-              <td>{item['title']}</td>
+              <th scope="row">username</th>
+              <td>{item['username']}</td>
             </tr>
             <tr>
-              <th scope="row">description</th>
-              <td>{item['description']}</td>
+              <th scope="row">plainPassword</th>
+              <td>{item['plainPassword']}</td>
             </tr>
             <tr>
-              <th scope="row">author</th>
-              <td>{item['author']}</td>
+              <th scope="row">password</th>
+              <td>{item['password']}</td>
             </tr>
             <tr>
-              <th scope="row">publicationDate</th>
-              <td>{item['publicationDate']}</td>
+              <th scope="row">salt</th>
+              <td>{item['salt']}</td>
             </tr>
             <tr>
-              <th scope="row">reviews</th>
-              <td>{item['reviews']}</td>
+              <th scope="row">roles</th>
+              <td>{item['roles']}</td>
             </tr>
           </tbody>
         </table>
       }
       <Link to=".." className="btn btn-primary">Back to list</Link>
-      {item && <Link to={`/books/edit/${encodeURIComponent(item['@id'])}`}>
+      {item && <Link to={`/users/edit/${encodeURIComponent(item['@id'])}`}>
         <button className="btn btn-warning">Edit</button>
         </Link>
       }
@@ -89,12 +89,12 @@ class Show extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    error: state.book.show.error,
-    loading: state.book.show.loading,
-    retrieved:state.book.show.retrieved,
-    deleteError: state.book.del.error,
-    deleteLoading: state.book.del.loading,
-    deleted: state.book.del.deleted,
+    error: state.user.show.error,
+    loading: state.user.show.loading,
+    retrieved:state.user.show.retrieved,
+    deleteError: state.user.del.error,
+    deleteLoading: state.user.del.loading,
+    deleted: state.user.del.deleted,
   };
 };
 
