@@ -18,4 +18,4 @@ RUN yarn install
 
 COPY . ./
 
-CMD yarn start
+CMD CHOKIDAR_USEPOLLING=true yarn start
