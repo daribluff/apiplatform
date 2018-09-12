@@ -1,3 +1,51 @@
-<p>
-  navbar works!
-</p>
+<nav>
+    <div class="centreur-header">
+        <div class="nav-redirection-accueil">
+
+            <a href="/home" class="alogo" title="Agenda des soirées & des bars à Lyon">
+                <div class="logo">
+                    <img src="/web/css/images/Logo_blanc.png">
+                </div>
+            </a>
+
+            <div class="barrerecherche-nav">
+                <div id="search">
+                    <input class="search-data" id="search-data" name="saisie" type="text"
+                           placeholder="Nom / Adresse mail ..." required/>
+
+                    <div class="ajaxloader-rechermembre">
+                        <img src="/web/css/images/ajax-loader.gif" id="loaderdescription">
+                    </div>
+
+                    <div class="resultats-recherche-utilisateur">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block-boutons-nav">
+            <div class="notificationlogo" title="Mes notifications">
+                <i class="fa fa-exchange" id="notif"></i>
+            </div>
+            <div class="mobile-rechercher-users" title="Chercher un membre">
+                <i class="fa fa-users"></i>
+            </div>
+            <div class="menuderoulantnav" id="home">
+                <li class="deconnexion">
+                    <a href="/user/logout">Deconnexion</a>
+                </li>
+            </div>
+        </div>
+
+        <div class="envellope">
+            <i class="fa fa-envelope" id="mailmll"></i>
+        </div>
+
+        <a href="/aidezmoi">
+            <div class="lien-aide" title="Comprendre Undecesquatre">
+                <i class="fa fa-question"></i>
+            </div>
+        </a>
+    </div>
+</nav>

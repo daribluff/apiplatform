@@ -11,6 +11,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 const appRoutes: Routes = [
   {path:'', component:HomeComponent},
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     RegisterComponent,
     SettingsComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    AngularFontAwesomeModule
   ],
   imports: [
     BrowserModule,
