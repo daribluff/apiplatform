@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -13,9 +13,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
     selector: 'page-buyout',
     templateUrl: 'buyout.html',
 })
-export class BuyoutPage {
+export class BuyoutPage implements OnInit {
+
+    product: string;
 
     constructor(public navCtrl: NavController, public navParams: NavParams) {
+    }
+
+    ngOnInit(){
+        this.product = this.navParams.get('product');
+    }
+
+    gotToHome(){
+        this.navCtrl.popToRoot();
     }
 
 }

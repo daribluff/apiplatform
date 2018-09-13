@@ -6,8 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import {ShopPage} from "../pages/shop/shop";
-import {BuyoutPage} from "../pages/Buyout/buyout";
+import { ShopPage } from "../pages/shop/shop";
+import { BuyoutPage } from "../pages/Buyout/buyout";
 
 @NgModule({
   declarations: [

@@ -23,4 +23,8 @@ export class ShopPage {
       this.navCtrl.push(BuyoutPage)
     }
 
+    addToCart(productName : string){
+      this.navCtrl.push(BuyoutPage, { product : productName })
+    }
+
 }
